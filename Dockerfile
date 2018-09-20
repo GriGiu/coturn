@@ -1,4 +1,5 @@
-FROM ubuntu:16.04
+FROM debian:stretch-slim
+
 MAINTAINER Gri Giu <grigiua@gmail.com>
 
 # Set the working directory to /app
