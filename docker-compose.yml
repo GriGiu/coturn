@@ -1,0 +1,12 @@
+coturn:
+  image: grigiu/coturn:latest
+
+  privileged: true
+
+  restart: always
+
+  ports:
+  - "443:443"
+
+  environment:
+    - TERM=xterm                               
