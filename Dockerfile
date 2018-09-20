@@ -14,5 +14,6 @@ RUN apt-get update && apt-get install -y \
     coturn \
   && rm -rf /var/lib/apt/lists/*
   
+COPY ./turnserver.conf /etc/turnserver.conf
 
 ENTRYPOINT ["bash", "deploy-turnserver.sh"]    
